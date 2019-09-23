@@ -1,0 +1,18 @@
+# ninja log v5
+0	304	0	Target_Legato_Debug/api/c775d2fe7198075703457a9e5d9ab96c/client/le_mdc_interface.h	31bd761335d2c911
+0	401	0	Target_Legato_Debug/api/0f2ff6ecb969b97d7ecb4bafc024f48b/client/le_data_client.c	85886c2ff8e766e
+0	401	0	Target_Legato_Debug/api/0f2ff6ecb969b97d7ecb4bafc024f48b/client/le_data_interface.h	85886c2ff8e766e
+0	401	0	Target_Legato_Debug/api/0f2ff6ecb969b97d7ecb4bafc024f48b/client/le_data_messages.h	85886c2ff8e766e
+1	13	0	Target_Legato_Debug/app/mqttclient_fx30ltem/staging/read-only/lib/libpaho-mqtt3cs.so.1	32f1deb1645b56d9
+13	39	0	Target_Legato_Debug/app/mqttclient_fx30ltem/staging/read-only/cert/gdroot-g2.crt	b11ca15a95756ee7
+1	151	0	Target_Legato_Debug/app/mqttclient_fx30ltem/obj/mqttclient_fx30ltem/_main.c.o	708f51c61a81004d
+1	169	0	Target_Legato_Debug/component/74d7b5a3f61aed9308e0def6f7056758/obj/_componentMain.c.o	4ea3ff90153a7ac6
+1	201	0	Target_Legato_Debug/component/74d7b5a3f61aed9308e0def6f7056758/obj/9bb27803169ffd8ea79414ab1bc1eabe.o	bf3ccbd4cde872b7
+1	214	0	Target_Legato_Debug/component/74d7b5a3f61aed9308e0def6f7056758/obj/5ae9f4282bb88cd5198976a04266b14c.o	e22c48365c196a89
+0	268	0	Target_Legato_Debug/api/0f2ff6ecb969b97d7ecb4bafc024f48b/client/le_data_client.c.o	98911553187ec277
+268	326	0	Target_Legato_Debug/staging/read-only/lib/libComponent_mqttclient_fx30ltemComponent.so	f5fa36a2593e6be
+327	330	0	Target_Legato_Debug/app/mqttclient_fx30ltem/staging/read-only/lib/libComponent_mqttclient_fx30ltemComponent.so	c248461893646059
+326	393	0	Target_Legato_Debug/app/mqttclient_fx30ltem/obj/mqttclient_fx30ltem/mqttclient_fx30ltem	8dce6f17acbebf4f
+393	397	0	Target_Legato_Debug/app/mqttclient_fx30ltem/staging/read-only/bin/mqttclient_fx30ltem	223ca9db6d4c3274
+397	411	0	Target_Legato_Debug/app/mqttclient_fx30ltem/staging/info.properties	f7a0eaec753391bc
+411	515	0	Target_Legato_Debug/mqttclient_fx30ltem.wp77xx.update	4362a19621acbbbe

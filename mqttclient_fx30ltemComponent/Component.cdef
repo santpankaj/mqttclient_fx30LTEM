@@ -1,0 +1,62 @@
+sources:
+{
+	mqttclient_fx30ltemComponent.c
+	AVMQTTClient.c
+}
+
+requires:
+{
+	api:
+	{
+		le_data.api
+	}
+	lib:
+	{
+		ssl
+		crypto
+		paho-mqtt3cs
+	}
+	file:
+	{
+		// Binary files of OpenSSL and Crypto libs
+		/usr/lib/libssl.so.1.0.2 /lib/
+		/usr/lib/libcrypto.so.1.0.2 /lib/
+		// IP services
+		/etc/services /etc/
+		// The following files are required for the DNS resolver
+		/etc/nsswitch.conf /etc/
+		/etc/resolv.conf /etc/
+		/etc/dnsmasq.conf /etc/
+		/etc/hosts /etc/
+		/etc/host.conf /etc/
+		/lib/libnss_dns.so.2 /lib/
+		/lib/libnss_files.so.2 /lib/
+		/lib/libresolv.so.2 /lib/
+	}
+
+	// To handle SSL connection, the app needs to access to this device 
+	device:
+	{
+		// random number generator
+		/dev/urandom /dev/
+	}
+}
+
+bundles:
+{
+	file:
+	{
+		// push AirVantage public certificate to the "cert" directory of the sandbox
+		cert/gdroot-g2.crt 		cert/
+	}
+}
+
+ldflags:
+{
+	-Llib
+}
+
+cflags:
+{
+	-I MQTTSampleComponent/mqtt-inc
+}

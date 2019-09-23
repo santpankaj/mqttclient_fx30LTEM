@@ -1,0 +1,37 @@
+executables:
+{
+	mqttclient_fx30ltem = ( mqttclient_fx30ltemComponent )
+}
+
+processes:
+{
+	envVars:
+	{
+		LE_LOG_LEVEL = DEBUG
+	}
+
+	run:
+	{
+		( mqttclient_fx30ltem )
+	}
+
+	maxCoreDumpFileBytes: 512K
+	maxFileBytes: 512K
+}
+bundles:
+{
+	file:
+	{
+		// adding paho library to the lib directory of the sandbox
+		lib/libpaho-mqtt3cs.so	lib/libpaho-mqtt3cs.so.1
+	}	
+}
+
+bindings:
+{
+	mqttclient_fx30ltem.mqttclient_fx30ltemComponent.le_data -> dataConnectionService.le_data
+}
+
+version: 1.0.0
+maxFileSystemBytes: 512K
+sandboxed: true
